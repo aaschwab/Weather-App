@@ -38,4 +38,13 @@ header {
 }
 ul {
   list-style: none;
+  font-size: 12px;
+}
+
+.date-discription {
+  position: relative;
+  top: -30px;
+  left: 30px;
+  text-align: left;
+  max-width: 150px;
 }
