@@ -18,3 +18,9 @@ header {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+
+.current-temperature {
+  margin: auto;
+  padding: 0%;
+  font-weight: 500;
+}
