@@ -38,7 +38,7 @@ header {
 }
 ul {
   list-style: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .date-discription {
@@ -51,13 +51,13 @@ ul {
 
 .humidity-style {
   position: relative;
-  top: -85px;
+  top: -95px;
   right: 20px;
   text-align: right;
 }
 .wind-style {
   position: relative;
-  top: -85px;
-  right: 20px;
+  top: -95px;
+  right: 30px;
   text-align: right;
 }
