@@ -20,7 +20,19 @@ header {
 }
 
 .current-temperature {
+  font-size: 50px;
   margin: auto;
-  padding: 0%;
+  padding: 5%;
   font-weight: 500;
+}
+
+.emoji {
+  font-size: 100px;
+  margin: -30%;
+  padding: -50%;
+}
+
+.welcome-to-city {
+  font-size: 24px;
+  font-weight: 600;
 }
