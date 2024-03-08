@@ -35,6 +35,8 @@ header {
 .welcome-to-city {
   font-size: 30px;
   font-weight: 600;
+  position: relative;
+  top: -35px;
 }
 ul {
   list-style: none;
@@ -43,7 +45,7 @@ ul {
 
 .date-discription {
   position: relative;
-  top: -30px;
+  top: -65px;
   left: -10px;
   text-align: left;
   max-width: 150px;
@@ -51,13 +53,13 @@ ul {
 
 .humidity-style {
   position: relative;
-  top: -95px;
+  top: -125px;
   right: 20px;
   text-align: right;
 }
 .wind-style {
   position: relative;
-  top: -95px;
+  top: -125px;
   right: 30px;
   text-align: right;
 }
@@ -68,6 +70,22 @@ ul {
   width: 75%;
   border-radius: 8px;
   font-size: 24px;
-  padding: 2%;
+  padding: 15px;
   position: relative;
+  top: -85px;
+}
+.search-button {
+  background-color: rgb(12, 146, 230);
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  top: -88px;
+  color: white;
+}
+.reference {
+  position: relative;
+  top: -55px;
+  max-height: fit-content;
+  font-size: 16px;
 }
