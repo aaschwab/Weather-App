@@ -61,3 +61,13 @@ ul {
   right: 30px;
   text-align: right;
 }
+
+.form-style {
+  background-color: #def5ff;
+  border: none;
+  width: 75%;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 2%;
+  position: relative;
+}
