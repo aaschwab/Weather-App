@@ -33,7 +33,7 @@ header {
 }
 
 .welcome-to-city {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
 }
 ul {
@@ -44,7 +44,20 @@ ul {
 .date-discription {
   position: relative;
   top: -30px;
-  left: 30px;
+  left: -10px;
   text-align: left;
   max-width: 150px;
+}
+
+.humidity-style {
+  position: relative;
+  top: -85px;
+  right: 20px;
+  text-align: right;
+}
+.wind-style {
+  position: relative;
+  top: -85px;
+  right: 20px;
+  text-align: right;
 }
