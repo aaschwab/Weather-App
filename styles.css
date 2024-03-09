@@ -27,9 +27,10 @@ header {
 }
 
 .emoji {
-  font-size: 100px;
-  margin: -25%;
-  padding: auto;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  padding: -5%;
 }
 
 .welcome-to-city {
