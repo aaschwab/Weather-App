@@ -2,8 +2,10 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
+  let discriptionElement = document.querySelector("#weather-discription");
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
+  discriptionElement = response.data.condition.description;
 }
 
 function searchCity(city) {
@@ -21,3 +23,4 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#add-your-city");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+searchCity("Chicago");

@@ -45,7 +45,7 @@ ul {
 
 .date-discription {
   position: relative;
-  top: -65px;
+  top: -105px;
   left: -10px;
   text-align: left;
   max-width: 150px;
@@ -53,13 +53,13 @@ ul {
 
 .humidity-style {
   position: relative;
-  top: -125px;
+  top: -65px;
   right: 20px;
   text-align: right;
 }
 .wind-style {
   position: relative;
-  top: -125px;
+  top: -295x;
   right: 30px;
   text-align: right;
 }
@@ -72,7 +72,7 @@ ul {
   font-size: 24px;
   padding: 15px;
   position: relative;
-  top: -85px;
+  top: -15px;
 }
 .search-button {
   background-color: rgb(12, 146, 230);
@@ -80,12 +80,12 @@ ul {
   padding: 20px;
   border-radius: 8px;
   position: relative;
-  top: -88px;
+  top: -18px;
   color: white;
 }
 .reference {
   position: relative;
-  top: -55px;
+  top: -25px;
   max-height: fit-content;
   font-size: 16px;
 }
