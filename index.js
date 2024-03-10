@@ -59,19 +59,22 @@ function displayForecast() {
     forecastElement =
       forecastElement +
       `
-          <div class="weather-date">
-           ${day}
+          <div class="weather-forecast">
+           <ul> <li> <span class="date-day"> ${day} </span></li>
               <br>
                 <img
                 src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
                 alt=""
                 width="36"
               />
-          </div>
-          <div class="forecast-temp">
-              <span class="max-temp">18˚</span>
-              <span class="min-temp">12˚</span>
-            </div>`;
+              <br>
+              <span class="forecast-temp">
+              <li> <span class="max-temp">18˚</span>
+                  <span class="min-temp">12˚</span>
+                  </li>
+            </span>
+            </ul>
+          </div>`;
   });
 
   let forecast = document.querySelector("#forecast");

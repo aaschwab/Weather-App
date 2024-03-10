@@ -10,8 +10,8 @@ header {
 }
 .weather-app {
   background-color: white;
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 500px;
+
   margin: 30px auto;
   padding: 30px;
   border-radius: 10px;
@@ -43,6 +43,7 @@ header {
 ul {
   list-style: none;
   font-size: 14px;
+  display: block;
 }
 
 .date-discription {
@@ -61,9 +62,17 @@ ul {
   text-align: right;
 }
 
-.weather-forecast {
-  color: black;
+.forecast-weather {
   position: relative;
+  top: -75px;
+}
+
+.weather-forecast {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  justify-content: space-between;
+  color: black;
 }
 
 .weather-date {
@@ -83,7 +92,7 @@ ul {
   font-size: 24px;
   padding: 15px;
   position: relative;
-  top: 10px;
+  top: -25px;
 }
 .search-button {
   background-color: rgb(12, 146, 230);
@@ -91,7 +100,7 @@ ul {
   padding: 20px;
   border-radius: 8px;
   position: relative;
-  top: 10px;
+  top: -28px;
   color: white;
 }
 .reference {
