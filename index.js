@@ -51,6 +51,36 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastElement = "";
+
+  days.forEach(function (day) {
+    forecastElement =
+      forecastElement +
+      `
+          <div class="weather-date">
+           ${day}
+              <br>
+                <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                alt=""
+                width="36"
+              />
+          </div>
+          <div class="forecast-temp">
+              <span class="max-temp">18˚</span>
+              <span class="min-temp">12˚</span>
+            </div>`;
+  });
+
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastElement;
+  console.log(forecast.innerHTML);
+}
+
 let searchFormElement = document.querySelector("#add-your-city");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
 searchCity("Chicago");
+displayForecast();
