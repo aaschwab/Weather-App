@@ -80,6 +80,10 @@ ul {
   opacity: 0.5;
 }
 
+.forecast-icon {
+  width: 48px;
+}
+
 .forecast-temp {
   font-size: 12px;
   opacity: 0.5;

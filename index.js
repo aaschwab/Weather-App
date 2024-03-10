@@ -52,36 +52,47 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+
 function getForecast(city) {
   let apiKey = "44ebfbe3f90e8afo31a00943c4996bft";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
   axios(apiUrl).then(displayForecast);
 }
 
-function displayForecast() {
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+function displayForecast(response) {
   let forecastElement = "";
 
-  days.forEach(function (day) {
-    forecastElement =
-      forecastElement +
-      `
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastElement =
+        forecastElement +
+        `
           <div class="weather-forecast">
-           <ul> <li> <span class="date-day"> ${day} </span></li>
+           <ul> <li> <span class="date-day">${formatDay(day.time)}</span></li>
               <br>
-                <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                <img class="forecast-icon"
+                src= "${day.condition.icon_url}"
                 alt=""
                 width="36"
               />
               <br>
               <span class="forecast-temp">
-              <li> <span class="max-temp">18˚</span>
-                  <span class="min-temp">12˚</span>
+              <li> <span class="max-temp">${Math.round(
+                day.temperature.maximum
+              )}F˚</span>
+                  <span class="min-temp">${Math.round(
+                    day.temperature.minimum
+                  )}F˚</span>
                   </li>
             </span>
             </ul>
           </div>`;
+    }
   });
 
   let forecast = document.querySelector("#forecast");
@@ -92,4 +103,3 @@ let searchFormElement = document.querySelector("#add-your-city");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Chicago");
-displayForecast();
