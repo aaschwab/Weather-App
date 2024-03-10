@@ -50,6 +50,7 @@ ul {
   left: -10px;
   text-align: left;
   max-width: 150px;
+  max-height: 10%;
 }
 
 .humidity-style {
@@ -58,13 +59,24 @@ ul {
   right: 20px;
   text-align: right;
 }
-.wind-style {
+
+.weather-forecast {
   position: relative;
-  top: -295x;
-  right: 30px;
-  text-align: right;
+  top: -100px;
+  color: black;
+  max-height: 100%;
+  left: -200px;
 }
 
+.weather-date {
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+.forecast-temp {
+  font-size: 12px;
+  opacity: 0.5;
+}
 .form-style {
   background-color: #def5ff;
   border: none;
